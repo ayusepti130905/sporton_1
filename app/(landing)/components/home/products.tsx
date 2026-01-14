@@ -67,7 +67,7 @@ const ProductsSection = () => {
             key={index}
             className="p-1.5 bg-white hover:drop-shadow-xl duration-300"
           >
-            <div className="bg-primary-light aspect-square w-full flex justify-center items-center">
+            <div className="bg-primary-light aspect-square w-full flex justify-center items-center relative">
               <Image
                 src={`/images/products/${product.imgUrl}`}
                 alt={product.name}
