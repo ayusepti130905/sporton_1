@@ -15,7 +15,7 @@ const HeroSection = () => {
         />
         <div className="relative ml-40 w-full">
             <div className="relative rounded-full w-[151px] h-[37px] flex items-center justify-center left-5">
-                <div className="absolute inset-0 bg-primary opacity-20 rounded-full"></div>
+                <div className="absolute bg-primary w-[151px] h-[37px] opacity-11 rounded-full"></div>
                 <p className="text-primary italic">Friday Sale, 50%</p>
             </div>
           <h1 className="font-extrabold text-[95px] italic bg-gradient-to-b leading-tight from-black to-[#979797] bg-clip-text text-transparent">
