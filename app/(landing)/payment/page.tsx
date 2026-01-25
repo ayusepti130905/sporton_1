@@ -3,7 +3,7 @@ import PaymentSteps from "../components/payment/payment-steps";
 
 const Payment = () => {
     return (
-        <main className="bg-gray-200 min-h-[80vh]">
+        <main className="bg-gray-200 min-h-[80vh] pt-20">
             <div className="max-w-4xl mx-auto py-20">
                 <h1 className="text-4xl font-bold text-center mb-10">
                     Payment
