@@ -4,8 +4,8 @@ export async function fetchAPI<T>(
 ): Promise<T> {
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}${endpoint}`, {
     ...options,
-    cache: options?.cache || "no-store", // kita set no-store karena kita ingin mendapat data lebih real time atau lebih updated
-  });
+    cache: options?.cache || "no-store", 
+    });
 
   if (!res.ok) {
     let errorMessage = `Failed to fetch data from ${endpoint}`;
@@ -23,6 +23,6 @@ export async function fetchAPI<T>(
 };
 
 export function getImageUrl(path: string) {
-  if (path.startsWith("http")) return path; // artinya url nya sudah valid
+  if (path.startsWith("http")) return path;
   return `${process.env.NEXT_PUBLIC_API_ROOT}/${path}`;
 };
